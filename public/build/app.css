@@ -52,6 +52,10 @@
   background-color: #8cbb95;
 }
 
+.backgroundLight {
+  background-color: #cef6d5;
+}
+
 *,
 *::before,
 *::after {

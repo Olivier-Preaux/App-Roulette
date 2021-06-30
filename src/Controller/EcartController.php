@@ -38,6 +38,9 @@ class EcartController extends AbstractController
         $final2 = [4, 5, 6, 14, 15, 16, 24, 25, 26, 34, 35, 36];
         $final3 = [7, 8, 9, 10, 17, 18, 19, 20, 27, 28, 29, 30];
 
+        $blackColor = [2,4,6,8,10,11,13,15,17,20,22,24,26,28,29,31,33,35] ;
+        $redColor = [1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36] ;
+
 
         $ecart = new Ecart();
         $form = $this->createForm(EcartType::class, $ecart);
@@ -46,6 +49,17 @@ class EcartController extends AbstractController
         if ($form->isSubmitted() && $form->isValid()) {
             $entityManager = $this->getDoctrine()->getManager();
             $repo = $ecartRepository->findOneBy([], array('id' => 'DESC'));
+
+            // COLOR
+            $colorM='primary';
+            if (in_array($ecart->getTirage(), $redColor)){
+                $colorM="warning";
+            } else if (in_array($ecart->getTirage(), $blackColor)){
+                $colorM="dark";
+            } else if ($ecart->getTirage()==0){
+                $colorM="success";
+            }
+
             // DOUZAINE
             if (!in_array($ecart->getTirage(), $douzaine1)) {
                 $ecart->setDouzaine1(($repo->getDouzaine1()) + 1);
