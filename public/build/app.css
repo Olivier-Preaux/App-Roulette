@@ -32,6 +32,22 @@
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
 
+.containerMain {
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  /* background-color: hsla(348, 2%, 93%, 0.8); */
+  background-color: white ;
+  border-radius: 10px;
+  
+  border: hsla(348, 2%, 93%, 0.92);
+  margin: 0.5rem 0.5rem 0.5rem 0.5rem;
+  padding: 0.5rem;
+  -webkit-box-shadow: 0px 0px 21px -9px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 0px 0px 21px -9px rgba(0, 0, 0, 0.75);
+  box-shadow: 0px 0px 21px -9px rgba(0, 0, 0, 0.75);
+}
+
 *,
 *::before,
 *::after {
