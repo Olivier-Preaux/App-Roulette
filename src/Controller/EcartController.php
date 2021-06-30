@@ -113,7 +113,7 @@ class EcartController extends AbstractController
             }
             // SIXTAIN 4-5-6
             if (!in_array($ecart->getTirage(), $sixain4)) {
-                $ecart->setSixain1(($repo->getSixain4()) + 1);
+                $ecart->setSixain4(($repo->getSixain4()) + 1);
             }
             if (!in_array($ecart->getTirage(), $sixain5)) {
                 $ecart->setSixain5(($repo->getSixain5()) + 1);
