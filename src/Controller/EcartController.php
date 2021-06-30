@@ -51,14 +51,13 @@ class EcartController extends AbstractController
             $repo = $ecartRepository->findOneBy([], array('id' => 'DESC'));
 
             // COLOR
-            $colorM='primary';
             if (in_array($ecart->getTirage(), $redColor)){
-                $colorM="warning";
+                $ecart->setColor("danger");
             } else if (in_array($ecart->getTirage(), $blackColor)){
-                $colorM="dark";
+                $ecart->setColor("dark");
             } else if ($ecart->getTirage()==0){
-                $colorM="success";
-            }
+                $ecart->setColor("success");
+            } else {$ecart->setColor("white"); }
 
             // DOUZAINE
             if (!in_array($ecart->getTirage(), $douzaine1)) {
