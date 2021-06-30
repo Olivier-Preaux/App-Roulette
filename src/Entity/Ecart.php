@@ -104,6 +104,11 @@ class Ecart
      */
     private $final3=0;
 
+    /**
+     * @ORM\Column(type="string", length=255, nullable=true)
+     */
+    private $color;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -297,6 +302,18 @@ class Ecart
     public function setFinal3(int $final3): self
     {
         $this->final3 = $final3;
+
+        return $this;
+    }
+
+    public function getColor(): ?string
+    {
+        return $this->color;
+    }
+
+    public function setColor(?string $color): self
+    {
+        $this->color = $color;
 
         return $this;
     }
