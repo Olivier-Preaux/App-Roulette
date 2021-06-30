@@ -13,7 +13,9 @@ class EcartType extends AbstractType
     public function buildForm(FormBuilderInterface $builder, array $options)
     {
         $builder
-            ->add('tirage', IntegerType::class)
+            ->add('tirage', IntegerType::class , [
+                'label'=> false
+            ])
         ;
     }
 
