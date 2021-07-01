@@ -57,8 +57,11 @@
 	<div class="fs-3 mt-2 mx-2 col-3 ">{{ form_start(form) }}
 		{{ form_widget(form) }}
 		<button class="btn btn-primary my-1 py-1" style="display:none">{{ button_label|default('Save') }}</button>
-		{{ form_end(form) }}</div>  
+		{{ form_end(form) }}
+	</div> 
+	{% if ecarts.tirage >= 0 %}
 	<div class="numero fs-3 my-2 pt-2 ms-3 text-white text-center col-2 border border-dark bg-{{ ecarts.color }} rounded ">{{ ecarts.tirage }}</div>
+	{% endif %}
 </div>    
 
 {# <div class="fs-7 text-center fst-italic">Entrez "-1" pour réinitialiser</div> #}
