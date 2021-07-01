@@ -54,10 +54,8 @@
 }
 
 .backgroundLight {
-  background-color: #cef6d5;
+  background-color: rgba(187, 245, 209, 0.75);
 }
-
-
 
 *,
 *::before,
