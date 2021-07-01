@@ -47,7 +47,10 @@
 }
 
 .backgroundMain {
-  background-color: #8cbb95;
+    background-image: url("green.jpg");
+  background-position: center;
+  
+  background-size: cover;
 }
 
 .backgroundLight {
@@ -70,13 +73,18 @@
 
 body {
   margin: 0;
-  font-family: var(--bs-font-sans-serif);
+  /* font-family: var(--bs-font-sans-serif); */
+  font-family: fantasy;
   font-size: 1rem;
   font-weight: 400;
   line-height: 1.5;
   color: #212529;
   -webkit-text-size-adjust: 100%;
   -webkit-tap-highlight-color: rgba(0, 0, 0, 0);  
+}
+
+.fantaisy{
+  font-family: fantasy;
 }
 
 
