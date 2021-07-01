@@ -10,7 +10,7 @@
 		
 	
 
-<div class="containerMain mx-2 mb-2 fw-bold text-success mt-2">
+<div class="containerMain mx-2 mb-2 fw-bold text-success mt-2" >
 	<div class="mb-1 d-flex flex-row border border-{{ ((ecarts.douzaine1)>=7) ? 'danger' : 'dark' }} rounded">
 		<div class="backgroundLight fs-4 ps-2 col-10 rounded-left {{ ((ecarts.douzaine1)==6) ? 'bg-warning fw-bold text-white' : '' }}
 		{{ ((ecarts.douzaine1)>=7) ? 'bg-danger fw-bold text-white' : '' }}">Douzaine 1</div>  
@@ -63,13 +63,16 @@
 
 {# <div class="fs-7 text-center fst-italic">Entrez "-1" pour réinitialiser</div> #}
 <div class="d-flex mx-2 flex-row justify-content-between">
+	
 	<div class="containerMain col fw-bold text-success me-1">
+	<a href="#sixain1">	
 		<div class="mb-1 d-flex flex-row border border-{{ ((ecarts.sixain1)>=7) ? 'danger' : 'dark' }} rounded">
 			<div class="backgroundLight fs-4 ps-2 col-8 rounded-left {{ ((ecarts.sixain1)==6) ? 'bg-warning fw-bold text-white' : '' }}
 			{{ ((ecarts.sixain1)>=7) ? 'bg-danger fw-bold text-white' : '' }}">Six. 1</div>  
 			<div class="bg-success fs-4 fw-bold text-white text-center col {{ ((ecarts.sixain1)==6) ? 'bg-warning' : '' }}
 			{{ ((ecarts.sixain1)>=7) ? 'bg-danger' : '' }} ">{{ ecarts.sixain1 }}</div>
 		</div>
+		
 		<div class="mb-1 d-flex flex-row border border-{{ ((ecarts.sixain2)>=7) ? 'danger' : 'dark' }} rounded">
 			<div class="backgroundLight fs-4 ps-2 col-8 rounded-left {{ ((ecarts.sixain2)==6) ? 'bg-warning fw-bold text-white' : '' }}
 			{{ ((ecarts.sixain2)>=7) ? 'bg-danger fw-bold text-white' : '' }}">Six. 2</div>  
@@ -83,7 +86,9 @@
 			{{ ((ecarts.sixain3)>=7) ? 'bg-danger' : '' }} ">{{ ecarts.sixain3 }}</div>
 		</div>
 	</div>
+	</a>
 	<div class="containerMain col fw-bold text-success ms-1">
+	<a href="#sixain4">
 		<div class="mb-1 d-flex flex-row border border-{{ ((ecarts.sixain4)>=7) ? 'danger' : 'dark' }} rounded">
 			<div class="backgroundLight fs-4 ps-2 col-8 rounded-left {{ ((ecarts.sixain4)==6) ? 'bg-warning fw-bold text-white' : '' }}
 			{{ ((ecarts.sixain4)>=7) ? 'bg-danger fw-bold text-white' : '' }}">Six. 4</div>  
@@ -98,15 +103,17 @@
 		</div>
 		<div class="d-flex flex-row border border-{{ ((ecarts.sixain6)>=7) ? 'danger' : 'dark' }} rounded">
 			<div class="backgroundLight fs-4 ps-2 col-8 rounded-left {{ ((ecarts.sixain6)==6) ? 'bg-warning fw-bold text-white' : '' }}
-			{{ ((ecarts.sixain6)>=7) ? 'bg-danger fw-bold text-white' : '' }}">Six. 7</div>  
+			{{ ((ecarts.sixain6)>=7) ? 'bg-danger fw-bold text-white' : '' }}">Six. 6</div>  
 			<div class="bg-success fs-4 fw-bold text-white text-center col {{ ((ecarts.sixain6)==6) ? 'bg-warning' : '' }}
 			{{ ((ecarts.sixain6)>=7) ? 'bg-danger' : '' }} ">{{ ecarts.sixain6 }}</div>
 		</div>
+	</a>
 	</div>
 </div>
 
 <div class="d-flex mt-2 mx-2 flex-row justify-content-between">
 	<div class="containerMain col fw-bold text-success me-1">
+	<a href="#sixain7">
 		<div class="mb-1 d-flex flex-row border border-{{ ((ecarts.sixain7)>=7) ? 'danger' : 'dark' }} rounded">
 			<div class="backgroundLight fs-4 ps-2 col-8 rounded-left {{ ((ecarts.sixain7)==6) ? 'bg-warning fw-bold text-white' : '' }}
 			{{ ((ecarts.sixain7)>=7) ? 'bg-danger fw-bold text-white' : '' }}">Six. 7</div>  
@@ -125,8 +132,10 @@
 			<div class="bg-success fs-4 fw-bold text-white text-center col {{ ((ecarts.sixain9)==6) ? 'bg-warning' : '' }}
 			{{ ((ecarts.sixain9)>=7) ? 'bg-danger' : '' }} ">{{ ecarts.sixain9 }}</div>
 		</div>
+	</a>
 	</div>
 	<div class="containerMain col fw-bold text-success ms-1">
+	<a href="#sixain10">	
 		<div class="mb-1 d-flex flex-row border border-{{ ((ecarts.sixain10)>=7) ? 'danger' : 'dark' }} rounded">
 			<div class="backgroundLight fs-4 ps-2 col-8 rounded-left {{ ((ecarts.sixain10)==6) ? 'bg-warning fw-bold text-white' : '' }}
 			{{ ((ecarts.sixain10)>=7) ? 'bg-danger fw-bold text-white' : '' }}">Six. 10</div>  
@@ -145,6 +154,7 @@
 			<div class="bg-success fs-4 fw-bold text-white text-center col {{ ((ecarts.sixain12)==6) ? 'bg-warning' : '' }}
 			{{ ((ecarts.sixain12)>=7) ? 'bg-danger' : '' }} ">{{ ecarts.sixain12 }}</div>
 		</div>
+	</a>
 	</div>
 </div>
 {# 
@@ -172,106 +182,212 @@ Final 3 : {{ ecarts.final3 }}</br> #}
 				
 						{# <a href="{{ path('ecart_show', {'id': ecart.id}) }}">show</a>
 						<a href="{{ path('ecart_edit', {'id': ecart.id}) }}">edit</a> #}
-				
+<div class="d-flex flex-row text-white">
+	<div class="parent col mt-5 mb-2 mx-2 border border-dark">
+		<div class="div1 bg-light fw-bold text-dark" id="sixain1">Sixain 1</div>
+		<div class="div2 bg-danger"> 1</div>
+		<div class="div3 bg-dark"> 2</div>
+		<div class="div4 bg-danger"> 3</div>
+		<div class="div5 bg-dark "> 4</div>
+		<div class="div6 bg-danger "> 5</div>
+		<div class="div7 bg-dark"> 6</div>
+		<div class="div8  bg-dark"> 19</div>
+		<div class="div9 bg-dark "> 20</div>
+		<div class="div10 bg-danger"> 21</div>
+		<div class="div11 bg-dark"> 22</div>
+		<div class="div12 bg-danger"> 23</div>
+		<div class="div13 bg-dark"> 24</div>
+	</div>
 
-<div class="bg-light mt-5 mb-2 mx-2 d-flex flex-row border border-dark">
-	<div class="col-3 ms-3 my-auto">Sixain 1</div>
-	<div class="d_flex">
-		<div>1, 2, 3, 4, 5, 7</div>
-		<div> 19, 20, 21, 22, 23, 24</div>
+	<div class="parent col mt-5 mb-2 mx-2 border border-dark">
+		<div class="div1 bg-light fw-bold text-dark">Sixain 2</div>
+		<div class="div2  bg-danger"> 7</div>
+		<div class="div3  bg-dark"> 8</div>
+		<div class="div4  bg-danger"> 9</div>
+		<div class="div5  bg-dark"> 10</div>
+		<div class="div6 bg-dark"> 11</div>
+		<div class="div7 bg-danger"> 12</div>
+		<div class="div8 bg-danger"> 25</div>
+		<div class="div9 bg-dark"> 26</div>
+		<div class="div10 bg-danger"> 27</div>
+		<div class="div11 bg-danger"> 28</div>
+		<div class="div12 bg-dark"> 29</div>
+		<div class="div13 bg-danger"> 30</div>
+	</div>
+
+</div>
+
+<div class="d-flex flex-row text-white">
+	<div class="parent col mt-3 mb-2 mx-2 border border-dark">
+		<div class="div1 bg-light fw-bold text-dark">Sixain 3</div>
+		<div class="div2 bg-dark"> 13</div>
+		<div class="div3 bg-danger"> 14</div>
+		<div class="div4 bg-dark"> 15</div>
+		<div class="div5 bg-danger "> 16</div>
+		<div class="div6  bg-dark"> 17</div>
+		<div class="div7 bg-danger"> 18</div>
+		<div class="div8 bg-dark "> 31</div>
+		<div class="div9  bg-danger"> 32</div>
+		<div class="div10 bg-dark"> 33</div>
+		<div class="div11 bg-danger"> 34</div>
+		<div class="div12 bg-dark"> 35</div>
+		<div class="div13 bg-danger"> 36</div>
+	</div>
+
+	<div class="parent col mt-3 mb-2 mx-2 border border-dark">
+		<div class="div1 bg-light fw-bold text-dark" id="sixain4">Sixain 4</div>
+		<div class="div2  bg-danger"> 1</div>
+		<div class="div3 bg-dark "> 2</div>
+		<div class="div4 bg-danger "> 3</div>
+		<div class="div5 bg-dark "> 4</div>
+		<div class="div6 bg-danger"> 5</div>
+		<div class="div7 bg-dark"> 6</div>
+		<div class="div8 bg-dark"> 13</div>
+		<div class="div9 bg-danger"> 14</div>
+		<div class="div10 bg-dark"> 15</div>
+		<div class="div11 bg-danger"> 16</div>
+		<div class="div12 bg-dark"> 17</div>
+		<div class="div13 bg-danger"> 18</div>
 	</div>
 </div>
 
-<div class="bg-light mt-2 mb-2 mx-2 d-flex flex-row border border-dark">
-	<div class="col-3 ms-3 my-auto">Sixain 2</div>
-	<div class="d_flex">
-		<div>7, 8, 9, 10, 11, 12</div>
-		<div> 25, 26, 27, 28, 29, 30</div>
+<div class="d-flex justify-content-center">
+	<a class="btn btn-success btn-sm text-white" href="#main">Retour</a>
+</div>
+
+<div class="d-flex flex-row text-white">
+	<div class="parent col mt-3 mb-2 mx-2 border border-dark">
+		<div class="div1 bg-light fw-bold text-dark">Sixain 5</div>
+		<div class="div2 bg-danger"> 7</div>
+		<div class="div3 bg-dark"> 8</div>
+		<div class="div4 bg-danger"> 9</div>
+		<div class="div5 bg-dark "> 10</div>
+		<div class="div6 bg-dark "> 11</div>
+		<div class="div7 bg-danger"> 12</div>
+		<div class="div8 bg-dark "> 31</div>
+		<div class="div9 bg-danger "> 32</div>
+		<div class="div10 bg-dark"> 33</div>
+		<div class="div11 bg-danger"> 34</div>
+		<div class="div12 bg-dark"> 35</div>
+		<div class="div13 bg-danger"> 36</div>
+	</div>
+	<div class="parent col mt-3 mb-2 mx-2 border border-dark">
+		<div class="div1 bg-light fw-bold text-dark">Sixain 6</div>
+		<div class="div2 bg-dark "> 19</div>
+		<div class="div3 bg-dark "> 20</div>
+		<div class="div4 bg-dark  bg-danger"> 21</div>
+		<div class="div5 bg-dark "> 22</div>
+		<div class="div6 bg-danger"> 23</div>
+		<div class="div7 bg-dark"> 24</div>
+		<div class="div8 bg-danger"> 25</div>
+		<div class="div9 bg-dark"> 26</div>
+		<div class="div10 bg-danger"> 27</div>
+		<div class="div11 bg-danger"> 28</div>
+		<div class="div12 bg-dark"> 29</div>
+		<div class="div13 bg-danger"> 30</div>
 	</div>
 </div>
 
-<div class="bg-light mt-2 mb-2 mx-2 d-flex flex-row border border-dark">
-	<div class="col-3 ms-3 my-auto">Sixain 3</div>
-	<div class="d_flex">
-		<div>13, 14, 15, 16, 17, 18</div>
-		<div>31, 32, 33, 34, 35, 36</div>
+<div class="d-flex flex-row text-white" id="sixain7">
+	<div class="parent col mt-3 mb-2 mx-2 border border-dark">
+		<div class="div1 bg-light fw-bold text-dark">Sixain 7</div>
+		<div class="div2 bg-danger"> 1</div>
+		<div class="div3 bg-dark"> 2</div>
+		<div class="div4 bg-danger"> 3</div>
+		<div class="div5  bg-dark"> 4</div>
+		<div class="div6 bg-danger "> 5</div>
+		<div class="div7 bg-dark"> 6</div>
+		<div class="div8 bg-danger "> 25</div>
+		<div class="div9 bg-dark "> 26</div>
+		<div class="div10 bg-danger"> 27</div>
+		<div class="div11 bg-danger"> 28</div>
+		<div class="div12 bg-dark"> 29</div>
+		<div class="div13 bg-danger"> 30</div>
+	</div>
+	<div class="parent col mt-3 mb-2 mx-2 border border-dark">
+		<div class="div1 bg-light fw-bold text-dark">Sixain 8</div>
+		<div class="div2 bg-danger "> 7</div>
+		<div class="div3  bg-dark"> 8</div>
+		<div class="div4  bg-danger"> 9</div>
+		<div class="div5  bg-dark"> 10</div>
+		<div class="div6 bg-dark"> 11</div>
+		<div class="div7 bg-danger"> 12</div>
+		<div class="div8 bg-dark"> 13</div>
+		<div class="div9 bg-danger"> 14</div>
+		<div class="div10 bg-dark"> 15</div>
+		<div class="div11 bg-danger"> 16</div>
+		<div class="div12 bg-dark"> 17</div>
+		<div class="div13 bg-danger"> 18</div>
 	</div>
 </div>
 
-<div class="bg-light mt-2 mb-2 mx-2 d-flex flex-row border border-dark">
-	<div class="col-3 ms-3 my-auto">Sixain 4</div>
-	<div class="d_flex">
-		<div>1, 2, 3, 4, 5, 7</div>
-		<div>13, 14, 15, 16, 17, 18</div>
+<div class="d-flex justify-content-center">
+	<a class="btn btn-success btn-sm text-white" href="#main">Retour</a>
+</div>
+
+<div class="d-flex flex-row text-white">
+	<div class="parent col mt-3 mb-2 mx-2 border border-dark">
+		<div class="div1 bg-light fw-bold text-dark">Sixain 9</div>
+		<div class="div2 bg-dark"> 19</div>
+		<div class="div3 bg-dark"> 20</div>
+		<div class="div4 bg-danger"> 21</div>
+		<div class="div5 bg-dark "> 22</div>
+		<div class="div6  bg-danger"> 23</div>
+		<div class="div7 bg-dark"> 24</div>
+		<div class="div8  bg-dark"> 31</div>
+		<div class="div9  bg-danger"> 32</div>
+		<div class="div10 bg-dark"> 33</div>
+		<div class="div11 bg-danger"> 34</div>
+		<div class="div12 bg-dark"> 35</div>
+		<div class="div13 bg-danger"> 36</div>
+	</div>
+	<div class="parent col mt-3 mb-2 mx-2 border border-dark">
+		<div class="div1 bg-light fw-bold text-dark" id="sixain10">Sixain 10</div>
+		<div class="div2  bg-danger"> 1</div>
+		<div class="div3  bg-dark"> 2</div>
+		<div class="div4  bg-danger"> 3</div>
+		<div class="div5  bg-dark"> 4</div>
+		<div class="div6 bg-danger"> 5</div>
+		<div class="div7 bg-dark"> 6</div>
+		<div class="div8 bg-dark"> 31</div>
+		<div class="div9 bg-danger"> 32</div>
+		<div class="div10 bg-dark"> 33</div>
+		<div class="div11 bg-danger"> 34</div>
+		<div class="div12 bg-dark"> 35</div>
+		<div class="div13 bg-danger"> 36</div>
 	</div>
 </div>
 
-<div class="bg-light mt-2 mb-2 mx-2 d-flex flex-row border border-dark">
-	<div class="col-3 ms-3 my-auto">Sixain 5</div>
-	<div class="d_flex">
-		<div>7, 8, 9, 10, 11, 12</div>
-		<div>31, 32, 33, 34, 35, 36</div>
+<div class="d-flex flex-row text-white">
+	<div class="parent col mt-3 mb-2 mx-2 border border-dark">
+		<div class="div1 bg-light fw-bold text-dark">Sixain 11</div>
+		<div class="div2 bg-danger"> 7</div>
+		<div class="div3 bg-dark"> 8</div>
+		<div class="div4 bg-danger"> 9</div>
+		<div class="div5  bg-dark"> 10</div>
+		<div class="div6 bg-dark "> 11</div>
+		<div class="div7 bg-danger"> 12</div>
+		<div class="div8  bg-dark"> 19</div>
+		<div class="div9 bg-dark "> 20</div>
+		<div class="div10 bg-danger"> 21</div>
+		<div class="div11 bg-dark"> 22</div>
+		<div class="div12 bg-danger"> 23</div>
+		<div class="div13 bg-dark"> 24</div>
+	</div>
+	<div class="parent col mt-3 mb-2 mx-2 border border-dark">
+		<div class="div1 bg-light fw-bold text-dark">Sixain 12</div>
+		<div class="div2  bg-dark"> 13</div>
+		<div class="div3 bg-danger "> 14</div>
+		<div class="div4  bg-dark"> 15</div>
+		<div class="div5  bg-danger"> 16</div>
+		<div class="div6 bg-dark"> 17</div>
+		<div class="div7 bg-danger"> 18</div>
+		<div class="div8 bg-danger"> 25</div>
+		<div class="div9 bg-dark"> 26</div>
+		<div class="div10 bg-danger"> 27</div>
+		<div class=" bg-danger"> 28</div>
+		<div class="div12 bg-dark"> 29</div>
+		<div class="div13 bg-danger"> 30</div>
 	</div>
 </div>
-
-<div class="bg-light mt-2 mb-2 mx-2 d-flex flex-row border border-dark">
-	<div class="col-3 ms-3 my-auto">Sixain 7</div>
-	<div class="d_flex">
-		<div>19, 20, 21, 22, 23, 24</div>
-		<div>25, 26, 27, 28, 29, 30</div>
-	</div>
-</div>
-
-<div class="bg-light mt-2 mb-2 mx-2 d-flex flex-row border border-dark">
-	<div class="col-3 ms-3 my-auto">Sixain 7</div>
-	<div class="d_flex">
-		<div>1, 2, 3, 4, 5, 7</div>
-		<div>25, 26, 27, 28, 29, 30</div>
-	</div>
-</div>
-
-<div class="bg-light mt-2 mb-2 mx-2 d-flex flex-row border border-dark">
-	<div class="col-3 ms-3 my-auto">Sixain 8</div>
-	<div class="d_flex">
-		<div>7, 8, 9, 10, 11, 12</div>
-		<div>13, 14, 15, 16, 17, 18</div>
-	</div>
-</div>
-
-<div class="bg-light mt-2 mb-2 mx-2 d-flex flex-row border border-dark">
-	<div class="col-3 ms-3 my-auto">Sixain 9</div>
-	<div class="d_flex">
-		<div>19, 20, 21, 22, 23, 24</div>
-		<div>31, 32, 33, 34, 35, 36</div>
-	</div>
-</div>
-
-<div class="bg-light mt-2 mb-2 mx-2 d-flex flex-row border border-dark">
-	<div class="col-3 ms-3 my-auto">Sixain 10</div>
-	<div class="d_flex">
-		<div>1, 2, 3, 4, 5, 7</div>
-		<div>31, 32, 33, 34, 35, 36</div>
-	</div>
-</div>
-        
-<div class="bg-light mt-2 mb-2 mx-2 d-flex flex-row border border-dark">
-	<div class="col-3 ms-3 my-auto">Sixain 11</div>
-	<div class="d_flex">
-		<div>7, 8, 9, 10, 11, 12</div>
-		<div>19, 20, 21, 22, 23, 24</div>
-	</div>
-</div> 
-
-<div class="bg-light mt-2 mb-2 mx-2 d-flex flex-row border border-dark">
-	<div class="col-3 ms-3 my-auto">Sixain 12</div>
-	<div class="d_flex">
-		<div>13, 14, 15, 16, 17, 18</div>
-		<div>25, 26, 27, 28, 29, 30</div>
-	</div>
-</div>  
-       
-       
-      
-
-
 {% endblock %}
