@@ -109,6 +109,51 @@ class Ecart
      */
     private $color;
 
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $sixain4=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $sixain5=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $sixain6=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $sixain7=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $sixain8=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $sixain9=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $sixain10=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $sixain11=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $sixain12=0;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -314,6 +359,114 @@ class Ecart
     public function setColor(?string $color): self
     {
         $this->color = $color;
+
+        return $this;
+    }
+
+    public function getSixain4(): ?int
+    {
+        return $this->sixain4;
+    }
+
+    public function setSixain4(?int $sixain4): self
+    {
+        $this->sixain4 = $sixain4;
+
+        return $this;
+    }
+
+    public function getSixain5(): ?int
+    {
+        return $this->sixain5;
+    }
+
+    public function setSixain5(?int $sixain5): self
+    {
+        $this->sixain5 = $sixain5;
+
+        return $this;
+    }
+
+    public function getSixain6(): ?int
+    {
+        return $this->sixain6;
+    }
+
+    public function setSixain6(?int $sixain6): self
+    {
+        $this->sixain6 = $sixain6;
+
+        return $this;
+    }
+
+    public function getSixain7(): ?int
+    {
+        return $this->sixain7;
+    }
+
+    public function setSixain7(?int $sixain7): self
+    {
+        $this->sixain7 = $sixain7;
+
+        return $this;
+    }
+
+    public function getSixain8(): ?int
+    {
+        return $this->sixain8;
+    }
+
+    public function setSixain8(?int $sixain8): self
+    {
+        $this->sixain8 = $sixain8;
+
+        return $this;
+    }
+
+    public function getSixain9(): ?int
+    {
+        return $this->sixain9;
+    }
+
+    public function setSixain9(?int $sixain9): self
+    {
+        $this->sixain9 = $sixain9;
+
+        return $this;
+    }
+
+    public function getSixain10(): ?int
+    {
+        return $this->sixain10;
+    }
+
+    public function setSixain10(?int $sixain10): self
+    {
+        $this->sixain10 = $sixain10;
+
+        return $this;
+    }
+
+    public function getSixain11(): ?int
+    {
+        return $this->sixain11;
+    }
+
+    public function setSixain11(?int $sixain11): self
+    {
+        $this->sixain11 = $sixain11;
+
+        return $this;
+    }
+
+    public function getSixain12(): ?int
+    {
+        return $this->sixain12;
+    }
+
+    public function setSixain12(?int $sixain12): self
+    {
+        $this->sixain12 = $sixain12;
 
         return $this;
     }
