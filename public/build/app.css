@@ -47,9 +47,8 @@
 }
 
 .backgroundMain {
-    background-image: url("green.jpg");
+  background-image: url("green.jpg");
   background-position: center;
-  
   background-size: cover;
 }
 
