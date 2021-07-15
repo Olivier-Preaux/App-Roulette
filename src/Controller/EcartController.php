@@ -45,6 +45,25 @@ class EcartController extends AbstractController
         $blackColor = [2,4,6,8,10,11,13,15,17,20,22,24,26,28,29,31,33,35] ;
         $redColor = [1,3,5,7,9,12,14,16,18,19,21,23,25,27,30,32,34,36] ;
 
+        $even = [ 2,4,6,8,10,12,14,16,18,20,22,24,26,28,30,32,34,36];
+        $odd = [1,3,5,7,9,11,13,15,17,19,21,23,25,27,29,31,33,35];
+
+        $half1 = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18];
+        $half2 = [19,20,21,22,23,24,25,26,27,28,29,30,31,32,33,34,35,36];
+
+        $carre1245 = [1,2,4,5];
+        $carre2356 = [2,3,5,6];
+        $carre781011 = [7,8,10,11];
+        $carre891112 = [8,9,11,12];
+        $carre13141617 = [13,14,16,17];
+        $carre14151718 = [14,15,17,18];
+        $carre19202223 = [19,20,22,23];
+        $carre20212324 = [20,21,23,24];
+        $carre25262829 = [25,26,28,29];
+        $carre26272930 = [26,27,29,30];
+        $carre31323435 = [31,32,34,35];
+        $carre32333536 = [32,33,35,36];
+        
 
         $ecart = new Ecart();
         $form = $this->createForm(EcartType::class, $ecart);
@@ -62,6 +81,68 @@ class EcartController extends AbstractController
             } else if ($ecart->getTirage()==0){
                 $ecart->setColor("success");
             } else {$ecart->setColor("white"); }
+
+            // RED BLACK 
+            if (!in_array($ecart->getTirage(), $redColor)) {
+                $ecart->setRed(($repo->getRed()) + 1);
+            }
+            if (!in_array($ecart->getTirage(), $blackColor)) {
+                $ecart->setBlack(($repo->getBlack()) + 1);
+            }
+
+            // EVEN ODD 
+            if (!in_array($ecart->getTirage(), $even)) {
+                $ecart->setEven(($repo->getEven()) + 1);
+            }
+            if (!in_array($ecart->getTirage(), $odd)) {
+                $ecart->setOdd(($repo->getOdd()) + 1);
+            }
+
+            // 1-18 19-36 
+            if (!in_array($ecart->getTirage(), $half1)) {
+                $ecart->setHalf1(($repo->getHalf1()) + 1);
+            }
+            if (!in_array($ecart->getTirage(), $half2)) {
+                $ecart->setHalf2(($repo->getHalf2()) + 1);
+            }
+
+            // CARRES
+            if (!in_array($ecart->getTirage(), $carre1245)) {
+                $ecart->setCarre1245(($repo->getCarre1245()) + 1);
+            }
+            if (!in_array($ecart->getTirage(), $carre2356)) {
+                $ecart->setCarre2356(($repo->getCarre2356()) + 1);
+            }
+            if (!in_array($ecart->getTirage(), $carre781011)) {
+                $ecart->setCarre781011(($repo->getCarre781011()) + 1);
+            }
+            if (!in_array($ecart->getTirage(), $carre891112)) {
+                $ecart->setCarre891112(($repo->getCarre891112()) + 1);
+            }
+            if (!in_array($ecart->getTirage(), $carre13141617)) {
+                $ecart->setCarre13141617(($repo->getCarre13141617()) + 1);
+            }
+            if (!in_array($ecart->getTirage(), $carre14151718)) {
+                $ecart->setCarre14151718(($repo->getCarre14151718()) + 1);
+            }
+            if (!in_array($ecart->getTirage(), $carre19202223)) {
+                $ecart->setCarre19202223(($repo->getCarre19202223()) + 1);
+            }
+            if (!in_array($ecart->getTirage(), $carre20212324)) {
+                $ecart->setCarre20212324(($repo->getCarre20212324()) + 1);
+            }
+            if (!in_array($ecart->getTirage(), $carre25262829)) {
+                $ecart->setCarre25262829(($repo->getCarre25262829()) + 1);
+            }
+            if (!in_array($ecart->getTirage(), $carre26272930)) {
+                $ecart->setCarre26272930(($repo->getCarre26272930()) + 1);
+            }
+            if (!in_array($ecart->getTirage(), $carre31323435)) {
+                $ecart->setCarre31323435(($repo->getCarre31323435()) + 1);
+            }
+            if (!in_array($ecart->getTirage(), $carre32333536)) {
+                $ecart->setCarre32333536(($repo->getCarre32333536()) + 1);
+            }
 
             // DOUZAINE
             if (!in_array($ecart->getTirage(), $douzaine1)) {
@@ -143,6 +224,24 @@ class EcartController extends AbstractController
                 $ecart->setFinal1(0);
                 $ecart->setFinal2(0);
                 $ecart->setFinal3(0);
+                $ecart->setRed(0);
+                $ecart->setBlack(0);
+                $ecart->setEven(0);
+                $ecart->setOdd(0);
+                $ecart->setHalf1(0);
+                $ecart->setHalf2(0);
+                $ecart->setCarre1245(0);
+                $ecart->setCarre13141617(0);
+                $ecart->setCarre14151718(0);
+                $ecart->setCarre19202223(0);
+                $ecart->setCarre20212324(0);
+                $ecart->setCarre2356(0);
+                $ecart->setCarre25262829(0);
+                $ecart->setCarre26272930(0);
+                $ecart->setCarre31323435(0);
+                $ecart->setCarre32333536(0);
+                $ecart->setCarre781011(0);
+                $ecart->setCarre891112(0);
             }
             $entityManager->persist($ecart);
             $entityManager->flush();

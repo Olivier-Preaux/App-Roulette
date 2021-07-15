@@ -100,4 +100,53 @@
 						{{ ((ecarts.sixain6)>=14) ? 'bg-danger' : '' }} ">{{ ecarts.sixain6 }}</div>
 		</div>
 	</div>
-</div></div>{% endblock %}
+</div></div>
+
+<div class="containerMain d-flex flex-row mx-2 mb-2 text-success mt-4">
+		<div class="me-1 col d-flex flex-row border border-{{ ((ecarts.red)>=7) ? 'danger' : '' }} rounded">
+			<div class="backgroundLight text-danger fs-4 ps-2 col-10 rounded-left {{ ((ecarts.red)==6) ? 'bg-warning-light text-warning' : '' }}
+						{{ ((ecarts.red)>=7) ? 'bg-danger-light text-danger' : '' }}">Red</div>
+			<div class="bg-success fs-4 text-white text-center rounded-right col-2 {{ ((ecarts.red)==6) ? 'bg-warning' : '' }}
+						{{ ((ecarts.red)>=7) ? 'bg-danger' : '' }} ">{{ ecarts.red }}</div>
+		</div>
+		<div class="col d-flex flex-row border border-{{ ((ecarts.black)>=7) ? 'danger' : '' }} rounded">
+			<div class="backgroundLight text-dark fs-4 ps-2 col-10 rounded-left {{ ((ecarts.black)==6) ? 'bg-warning-light text-warning' : '' }}
+						{{ ((ecarts.black)>=7) ? 'bg-danger-light text-danger' : '' }}">Black</div>
+			<div class="bg-success  fs-4 text-white text-center rounded-right col-2 {{ ((ecarts.black)==6) ? 'bg-warning' : '' }}
+						{{ ((ecarts.black)>=7) ? 'bg-danger' : '' }} ">{{ ecarts.black }}</div>
+		</div>
+</div>
+
+<div class="containerMain d-flex flex-row mx-2 mb-2 text-success mt-1">
+		<div class="me-1 col d-flex flex-row border border-{{ ((ecarts.even)>=7) ? 'danger' : '' }} rounded">
+			<div class="backgroundLight fs-4 ps-2 col-10 rounded-left {{ ((ecarts.even)==6) ? 'bg-warning-light text-warning' : '' }}
+						{{ ((ecarts.even)>=7) ? 'bg-danger-light text-danger' : '' }}">Even</div>
+			<div class="bg-success fs-4 text-white text-center rounded-right col-2 {{ ((ecarts.even)==6) ? 'bg-warning' : '' }}
+						{{ ((ecarts.even)>=7) ? 'bg-danger' : '' }} ">{{ ecarts.even }}</div>
+		</div>
+		<div class="col d-flex flex-row border border-{{ ((ecarts.odd)>=7) ? 'danger' : '' }} rounded">
+			<div class="backgroundLight fs-4 ps-2 col-10 rounded-left {{ ((ecarts.odd)==6) ? 'bg-warning-light text-warning' : '' }}
+						{{ ((ecarts.odd)>=7) ? 'bg-danger-light text-danger' : '' }}">Odd</div>
+			<div class="bg-success  fs-4 text-white text-center rounded-right col-2 {{ ((ecarts.black)==6) ? 'bg-warning' : '' }}
+						{{ ((ecarts.odd)>=7) ? 'bg-danger' : '' }} ">{{ ecarts.odd }}</div>
+		</div>
+</div>
+
+<div class="containerMain d-flex flex-row mx-2 mb-2 text-success mt-1">
+		<div class="me-1 col d-flex flex-row border border-{{ ((ecarts.half1)>=7) ? 'danger' : '' }} rounded">
+			<div class="backgroundLight fs-4 ps-2 col-10 rounded-left {{ ((ecarts.half1)==6) ? 'bg-warning-light text-warning' : '' }}
+						{{ ((ecarts.half1)>=7) ? 'bg-danger-light text-danger' : '' }}">1-18</div>
+			<div class="bg-success fs-4 text-white text-center rounded-right col-2 {{ ((ecarts.half1)==6) ? 'bg-warning' : '' }}
+						{{ ((ecarts.half1)>=7) ? 'bg-danger' : '' }} ">{{ ecarts.half1 }}</div>
+		</div>
+		<div class="col d-flex flex-row border border-{{ ((ecarts.half2)>=7) ? 'danger' : '' }} rounded">
+			<div class="backgroundLight fs-4 ps-2 col-10 rounded-left {{ ((ecarts.half2)==6) ? 'bg-warning-light text-warning' : '' }}
+						{{ ((ecarts.half2)>=7) ? 'bg-danger-light text-danger' : '' }}">19-36</div>
+			<div class="bg-success  fs-4 text-white text-center rounded-right col-2 {{ ((ecarts.half2)==6) ? 'bg-warning' : '' }}
+						{{ ((ecarts.half2)>=7) ? 'bg-danger' : '' }} ">{{ ecarts.half2 }}</div>
+		</div>
+</div>
+
+
+
+{% endblock %}

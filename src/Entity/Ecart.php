@@ -154,6 +154,96 @@ class Ecart
      */
     private $sixain12=0;
 
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $carre1245=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $carre2356=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $carre781011=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $carre891112=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $carre13141617=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $carre14151718=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $carre19202223=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $carre20212324=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $carre25262829=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $carre26272930=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $carre31323435=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $carre32333536=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $red=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $black=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $even=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $odd=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $half1=0;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $half2=0;
+
     public function getId(): ?int
     {
         return $this->id;
@@ -467,6 +557,222 @@ class Ecart
     public function setSixain12(?int $sixain12): self
     {
         $this->sixain12 = $sixain12;
+
+        return $this;
+    }
+
+    public function getCarre1245(): ?int
+    {
+        return $this->carre1245;
+    }
+
+    public function setCarre1245(?int $carre1245): self
+    {
+        $this->carre1245 = $carre1245;
+
+        return $this;
+    }
+
+    public function getCarre2356(): ?int
+    {
+        return $this->carre2356;
+    }
+
+    public function setCarre2356(?int $carre2356): self
+    {
+        $this->carre2356 = $carre2356;
+
+        return $this;
+    }
+
+    public function getCarre781011(): ?int
+    {
+        return $this->carre781011;
+    }
+
+    public function setCarre781011(?int $carre781011): self
+    {
+        $this->carre781011 = $carre781011;
+
+        return $this;
+    }
+
+    public function getCarre891112(): ?int
+    {
+        return $this->carre891112;
+    }
+
+    public function setCarre891112(?int $carre891112): self
+    {
+        $this->carre891112 = $carre891112;
+
+        return $this;
+    }
+
+    public function getCarre13141617(): ?int
+    {
+        return $this->carre13141617;
+    }
+
+    public function setCarre13141617(?int $carre13141617): self
+    {
+        $this->carre13141617 = $carre13141617;
+
+        return $this;
+    }
+
+    public function getCarre14151718(): ?int
+    {
+        return $this->carre14151718;
+    }
+
+    public function setCarre14151718(?int $carre14151718): self
+    {
+        $this->carre14151718 = $carre14151718;
+
+        return $this;
+    }
+
+    public function getCarre19202223(): ?int
+    {
+        return $this->carre19202223;
+    }
+
+    public function setCarre19202223(?int $carre19202223): self
+    {
+        $this->carre19202223 = $carre19202223;
+
+        return $this;
+    }
+
+    public function getCarre20212324(): ?int
+    {
+        return $this->carre20212324;
+    }
+
+    public function setCarre20212324(?int $carre20212324): self
+    {
+        $this->carre20212324 = $carre20212324;
+
+        return $this;
+    }
+
+    public function getCarre25262829(): ?int
+    {
+        return $this->carre25262829;
+    }
+
+    public function setCarre25262829(?int $carre25262829): self
+    {
+        $this->carre25262829 = $carre25262829;
+
+        return $this;
+    }
+
+    public function getCarre26272930(): ?int
+    {
+        return $this->carre26272930;
+    }
+
+    public function setCarre26272930(?int $carre26272930): self
+    {
+        $this->carre26272930 = $carre26272930;
+
+        return $this;
+    }
+
+    public function getCarre31323435(): ?int
+    {
+        return $this->carre31323435;
+    }
+
+    public function setCarre31323435(?int $carre31323435): self
+    {
+        $this->carre31323435 = $carre31323435;
+
+        return $this;
+    }
+
+    public function getCarre32333536(): ?int
+    {
+        return $this->carre32333536;
+    }
+
+    public function setCarre32333536(?int $carre32333536): self
+    {
+        $this->carre32333536 = $carre32333536;
+
+        return $this;
+    }
+
+    public function getRed(): ?int
+    {
+        return $this->red;
+    }
+
+    public function setRed(?int $red): self
+    {
+        $this->red = $red;
+
+        return $this;
+    }
+
+    public function getBlack(): ?int
+    {
+        return $this->black;
+    }
+
+    public function setBlack(?int $black): self
+    {
+        $this->black = $black;
+
+        return $this;
+    }
+
+    public function getEven(): ?int
+    {
+        return $this->even;
+    }
+
+    public function setEven(?int $even): self
+    {
+        $this->even = $even;
+
+        return $this;
+    }
+
+    public function getOdd(): ?int
+    {
+        return $this->odd;
+    }
+
+    public function setOdd(?int $odd): self
+    {
+        $this->odd = $odd;
+
+        return $this;
+    }
+
+    public function getHalf1(): ?int
+    {
+        return $this->half1;
+    }
+
+    public function setHalf1(?int $half1): self
+    {
+        $this->half1 = $half1;
+
+        return $this;
+    }
+
+    public function getHalf2(): ?int
+    {
+        return $this->half2;
+    }
+
+    public function setHalf2(?int $half2): self
+    {
+        $this->half2 = $half2;
 
         return $this;
     }
