@@ -30,21 +30,13 @@ class EcartController extends AbstractController
         $transversale2 = [4, 5, 6, 13, 14, 15, 22, 23, 24, 31, 32, 33];
         $transversale3 = [7, 8, 9, 16, 17, 18, 25, 26, 27, 34, 35, 36];
 
-        $sixain1 = [1, 2, 3, 4, 5, 6, 19, 20, 21, 22, 23, 24];
-        $sixain2 = [7, 8, 9, 10, 11, 12, 25, 26, 27, 28, 29, 30];
-        $sixain3 = [13, 14, 15, 16, 17, 18, 31, 32, 33, 34, 35, 36];
+        $sixain1 = [1, 2, 3, 4, 5, 6];
+        $sixain2 = [7, 8, 9, 10, 11, 12];
+        $sixain3 = [13, 14, 15, 16, 17, 18];
+        $sixain4 = [19, 20, 21, 22, 23, 24];
 
-        $sixain4 = [1, 2, 3, 4, 5, 6, 13, 14, 15, 16, 17, 18];
-        $sixain5 = [7, 8, 9, 10, 11, 12, 31, 32, 33, 34, 35, 36];
-        $sixain6 = [19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30];
-
-        $sixain7 = [1, 2, 3, 4, 5, 6, 25, 26, 27, 28, 29, 30];
-        $sixain8 = [7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18];
-        $sixain9 = [19, 20, 21, 22, 23, 24, 31, 32, 33, 34, 35, 36];
-
-        $sixain10 = [1, 2, 3, 4, 5, 6, 31, 32, 33, 34, 35, 36];
-        $sixain11 = [7, 8, 9, 10, 11, 12, 19, 20, 21, 22, 23, 24];
-        $sixain12 = [13, 14, 15, 16, 17, 18, 25, 26, 27, 28, 29, 30];
+        $sixain5 = [25, 26, 27, 28, 29, 30];
+        $sixain6 = [31, 32, 33, 34, 35, 36];
 
         $final1 = [1, 2, 3, 11, 12, 13, 21, 22, 23, 31, 32, 33];
         $final2 = [4, 5, 6, 14, 15, 16, 24, 25, 26, 34, 35, 36];
@@ -121,26 +113,6 @@ class EcartController extends AbstractController
             if (!in_array($ecart->getTirage(), $sixain6)) {
                 $ecart->setSixain6(($repo->getSixain6()) + 1);
             }
-            // SIXTAIN 7-8-9
-            if (!in_array($ecart->getTirage(), $sixain7)) {
-                $ecart->setSixain7(($repo->getSixain7()) + 1);
-            }
-            if (!in_array($ecart->getTirage(), $sixain8)) {
-                $ecart->setSixain8(($repo->getSixain8()) + 1);
-            }
-            if (!in_array($ecart->getTirage(), $sixain9)) {
-                $ecart->setSixain9(($repo->getSixain9()) + 1);
-            }
-            // SIXTAIN 10-11-12
-            if (!in_array($ecart->getTirage(), $sixain10)) {
-                $ecart->setSixain10(($repo->getSixain10()) + 1);
-            }
-            if (!in_array($ecart->getTirage(), $sixain11)) {
-                $ecart->setSixain11(($repo->getSixain11()) + 1);
-            }
-            if (!in_array($ecart->getTirage(), $sixain12)) {
-                $ecart->setSixain12(($repo->getSixain12()) + 1);
-            }
             // FINAL
             if (!in_array($ecart->getTirage(), $final1)) {
                 $ecart->setFinal1(($repo->getFinal1()) + 1);
@@ -167,13 +139,7 @@ class EcartController extends AbstractController
                 $ecart->setSixain3(0);
                 $ecart->setSixain4(0);
                 $ecart->setSixain5(0);
-                $ecart->setSixain6(0);
-                $ecart->setSixain7(0);
-                $ecart->setSixain8(0);
-                $ecart->setSixain9(0);
-                $ecart->setSixain10(0);
-                $ecart->setSixain11(0);
-                $ecart->setSixain12(0);                
+                $ecart->setSixain6(0);       
                 $ecart->setFinal1(0);
                 $ecart->setFinal2(0);
                 $ecart->setFinal3(0);
