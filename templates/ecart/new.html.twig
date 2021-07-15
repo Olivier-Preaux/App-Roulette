@@ -127,7 +127,7 @@
 		<div class="col d-flex flex-row border border-{{ ((ecarts.odd)>=7) ? 'danger' : '' }} rounded">
 			<div class="backgroundLight fs-4 ps-2 col-8 rounded-left {{ ((ecarts.odd)==6) ? 'bg-warning-light text-warning' : '' }}
 						{{ ((ecarts.odd)>=7) ? 'bg-danger-light text-danger' : '' }}">Odd</div>
-			<div class="bg-success  fs-4 text-white text-center rounded-right col {{ ((ecarts.black)==6) ? 'bg-warning' : '' }}
+			<div class="bg-success  fs-4 text-white text-center rounded-right col {{ ((ecarts.odd)==6) ? 'bg-warning' : '' }}
 						{{ ((ecarts.odd)>=7) ? 'bg-danger' : '' }} ">{{ ecarts.odd }}</div>
 		</div>
 </div>
