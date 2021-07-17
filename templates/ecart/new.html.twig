@@ -50,8 +50,8 @@
 	</div>
 
 	{# /// Formulaire #}
-	<div class="my-1 mx-2 d-flex flex-row justify-content-center ">
-		<div class="fs-3 mt-2 mx-2 col-3 ">{{ form_start(form) }}
+	<div class="formulaire  my-1 mx-2 d-flex flex-row justify-content-center ">
+		<div class=" fs-3 mt-2 mx-2 col-3 ">{{ form_start(form) }}
 			{{ form_widget(form) }}
 			<button class="btn btn-primary my-1 py-1" style="display:none">{{ button_label|default('Save') }}</button>
 			{{ form_end(form) }}
@@ -102,7 +102,7 @@
 	</div>
 </div>
 
-<div class="containerMain text-center d-flex flex-row mx-2 mb-2 text-success mt-4">
+<div class="containerMain text-center d-flex flex-row mx-2 mb-2 text-success margintop5">
 		<div class="me-1 col d-flex flex-row border border-{{ ((ecarts.red)>=7) ? 'danger' : '' }} rounded">
 			<div class="backgroundLight text-danger fs-4 ps-2 col-8 rounded-left {{ ((ecarts.red)==6) ? 'bg-warning-light text-warning' : '' }}
 						{{ ((ecarts.red)>=7) ? 'bg-danger-light text-danger' : '' }}">Red</div>
@@ -146,6 +146,8 @@
 						{{ ((ecarts.half2)>=7) ? 'bg-danger' : '' }} ">{{ ecarts.half2 }}</div>
 		</div>
 </div>
+
+
 
 {# CARRES #}
 

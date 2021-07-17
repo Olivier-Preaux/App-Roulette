@@ -57,6 +57,19 @@
   background-color: rgba(187, 245, 209, 0.75);
 }
 
+.formulaire {
+  position: -webkit-sticky;
+position: sticky;
+top: 130px;
+}
+
+.margintop5{
+  margin-top: 4rem;
+
+}
+
+
+
 *,
 *::before,
 *::after {
